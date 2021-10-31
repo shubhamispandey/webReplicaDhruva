@@ -1,0 +1,53 @@
+.navigation {
+    padding: 1.5rem 3rem;
+    @include flexAlignCenter;
+    justify-content: space-between;
+
+    &>* {
+        color: #000;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    &__logo {
+        width: 12rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__tools,
+    &__nav {
+        @include flexAlignCenter;
+    }
+
+    &__tools &__link {
+        font-size: 1.8rem;
+
+    }
+
+    &__item {
+        list-style: none;
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .socials-menu-btn {
+        font-size: 2rem;
+    }
+}
+
+.navigation-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}

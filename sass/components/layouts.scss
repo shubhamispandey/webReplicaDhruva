@@ -1,0 +1,66 @@
+.container {
+    position: relative;
+
+    &__border {
+        position: absolute;
+        top: 6rem;
+        left: 1rem;
+        width: 2px;
+        height: 90%;
+        background: #f1f1f1
+    }
+
+    &__header {
+        @include flexAlignCenter;
+
+        &--logo {
+            @include flexAlignCenter;
+
+            span {
+                color: $color-primary;
+                font-size: 1.8rem;
+                font-weight: 600;
+            }
+
+            img {
+                width: 4.5rem;
+                margin-left: 1rem;
+            }
+        }
+
+        &--desc {
+            width: 80%;
+            margin-left: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &--title {
+            margin-right: 2rem;
+        }
+
+        &--info {
+            flex: 45%;
+        }
+
+
+    }
+
+    &__body {
+        position: relative;
+    }
+
+    .inner-container {
+        width: 80%;
+        margin-left: auto;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+
+    .col-4 {
+        flex-basis: 31%;
+    }
+}

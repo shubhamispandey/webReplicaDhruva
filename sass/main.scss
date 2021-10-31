@@ -1,0 +1,21 @@
+@import "abstracts/mixins.scss";
+@import "abstracts/variables.scss";
+
+@import "base/animations.scss";
+@import "base/base.scss";
+@import "base/typography.scss";
+@import "base/utilites.scss";
+
+@import "components/layouts.scss";
+@import "components/basic.scss";
+@import "components/navigation.scss";
+@import "components/carousel.scss";
+@import "components/footer.scss";
+
+@import "pages/header.scss";
+@import "pages/features.scss";
+@import "pages/projects.scss";
+@import "pages/testimonial.scss";
+@import "pages/brands.scss";
+@import "pages/stories.scss";
+@import "pages/clients.scss";

@@ -1,0 +1,106 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexAlignCenter {
+    display: flex;
+    align-items: center;
+}
+
+// MEDIA QUERY MANAGER
+
+/* 
+200-320px - phone-sm
+320-420px - phone-md
+420-550px - phone-bg
+
+550-700px - tablet-port
+700-850px - tablet-land
+
+850-1000 - laptop-sm
+1000-1150 - laptop-md
+1150-1300 - laptop-bg
+
+1300-1500 - desktop-sm
+1500-1750 - desktop-md
+1750-2000 - desktop-bg
+1em = 16px  
+In media queries ems and rems are taken from the browser
+default and not what the user defines , so here 1rem is
+not 10px which we defined here in body
+breakpoint- argument choice
+phone
+tablet-port
+tablet-land
+big-desktop
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone-sm {
+        @media (max-width: 20em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==phone-md {
+        @media (max-width: 26.25em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==phone-bg {
+        @media (max-width: 34.38em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==tablet-port {
+        @media (max-width: 43.75em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==tablet-land {
+        @media (max-width: 53.125em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==laptop-sm {
+        @media (max-width: 62.5em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==laptop-md {
+        @media (max-width: 71.87em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==laptop-bg {
+        @media (max-width: 81.25em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==desktop-sm {
+        @media (max-width: 93.75em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==desktop-md {
+        @media (max-width: 109.375em) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==desktop-bg {
+        @media (max-width: 125em) {
+            @content;
+        }
+    }
+}

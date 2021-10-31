@@ -1,0 +1,42 @@
+<div class="container">
+            <div class="container__header">
+                <div class="container__header--logo">
+                    <span>01</span>
+                    <img src="./assets/img/Logo_2.svg" alt="">
+                </div>
+                <div class="container__header--desc">
+                    <div class="container__header--title">
+                        <h1 class="f-dark fs-xxlg">We help solve your tech problem.</h1>
+                        <p class="f-dark fs-sm">We are constantly refining our product. Adding new features. Working to
+                            help
+                            your buisness
+                            grow
+                        </p>
+                    </div>
+                    <div class="container__header--info">
+                        <p class="f-dark fs-sm">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, deserunt molestias quos
+                            magnam
+                            autem iste.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container__body">
+                <div class="carousel-prepend">
+                    <h1>Some Tech</h1>
+                    <h1>Company</h1>
+                    <button class="btn btn-transparent">
+                        Explore Project<i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="inner-container">
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="./assets/img/Banner_4@2x.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>

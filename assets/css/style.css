@@ -1,0 +1,227 @@
+/* 
+200-320px - phone-sm
+320-420px - phone-md
+420-550px - phone-bg
+
+550-700px - tablet-port
+700-850px - tablet-land
+
+850-1000 - laptop-sm
+1000-1150 - laptop-md
+1150-1300 - laptop-bg
+
+1300-1500 - desktop-sm
+1500-1750 - desktop-md
+1750-2000 - desktop-bg
+1em = 16px  
+In media queries ems and rems are taken from the browser
+default and not what the user defines , so here 1rem is
+not 10px which we defined here in body
+breakpoint- argument choice
+phone
+tablet-port
+tablet-land
+big-desktop
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.header,
+.features,
+.projects,
+.testimonials,
+.brands,
+.stories,
+.clients {
+  padding: 10rem 20rem; }
+
+* {
+  font-family: 'Roboto', sans-serif; }
+
+.u-center {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-Vbig {
+  margin-bottom: 20rem; }
+
+.u-margin-bottom-Xbig {
+  margin-bottom: 25rem; }
+
+.u-margin-top-xsmall {
+  margin-top: 1rem; }
+
+.u-margin-top-small {
+  margin-top: 2rem; }
+
+.u-margin-top-medium {
+  margin-top: 4rem; }
+
+.u-margin-top-big {
+  margin-top: 10rem; }
+
+.u-margin-top-Vbig {
+  margin-top: 20rem; }
+
+.u-margin-top-Xbig {
+  margin-top: 25rem; }
+
+.fs-xsm {
+  font-size: 1.2rem;
+  line-height: 1.8rem; }
+
+.fs-sm {
+  font-size: 1.4rem;
+  font-weight: 500; }
+
+.fs-md {
+  font-size: 1.6rem; }
+
+.fs-lg {
+  font-size: 2rem; }
+
+.fs-xlg {
+  font-size: 2.5rem; }
+
+.fs-xxlg {
+  font-size: 2.8rem; }
+
+.f-dark {
+  color: #222; }
+
+.f-midtone {
+  color: #4d4d4d; }
+
+.f-light {
+  color: #a3a3a3; }
+
+.container {
+  position: relative; }
+  .container__border {
+    position: absolute;
+    top: 6rem;
+    left: 1rem;
+    width: 2px;
+    height: 90%;
+    background: #f1f1f1; }
+  .container__header {
+    display: flex;
+    align-items: center; }
+    .container__header--logo {
+      display: flex;
+      align-items: center; }
+      .container__header--logo span {
+        color: #0980ad;
+        font-size: 1.8rem;
+        font-weight: 600; }
+      .container__header--logo img {
+        width: 4.5rem;
+        margin-left: 1rem; }
+    .container__header--desc {
+      width: 80%;
+      margin-left: auto;
+      display: flex;
+      justify-content: space-between; }
+    .container__header--title {
+      margin-right: 2rem; }
+    .container__header--info {
+      flex: 45%; }
+  .container__body {
+    position: relative; }
+  .container .inner-container {
+    width: 80%;
+    margin-left: auto; }
+
+.row {
+  display: flex;
+  justify-content: space-between; }
+  .row .col-4 {
+    flex-basis: 31%; }
+
+.btn {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #222;
+  font-weight: 600;
+  font-size: 1.4rem; }
+
+.navigation {
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .navigation > * {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 700; }
+  .navigation__logo {
+    width: 12rem; }
+    .navigation__logo img {
+      width: 100%; }
+  .navigation__tools, .navigation__nav {
+    display: flex;
+    align-items: center; }
+  .navigation__tools .navigation__link {
+    font-size: 1.8rem; }
+  .navigation__item {
+    list-style: none; }
+    .navigation__item:not(:last-child) {
+      margin-right: 4rem; }
+  .navigation__link {
+    text-decoration: none;
+    color: #000; }
+  .navigation .socials-menu-btn {
+    font-size: 2rem; }
+
+.navigation-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.carousel {
+  width: 100%;
+  height: 60rem; }
+  .carousel-item {
+    width: 100%;
+    height: 100%; }
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+.carousel-prepend {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .carousel-prepend h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    background: #0a81ab;
+    padding: 1rem 3rem; }
+  .carousel-prepend button {
+    margin-top: 2rem; }
+    .carousel-prepend button i {
+      margin-left: 1rem; }

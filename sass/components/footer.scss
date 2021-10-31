@@ -1,0 +1,9 @@
+.footer {
+    background-color: rgb(0, 0, 0);
+
+    &__card {
+        &--span span {
+            margin-right: 1rem;
+        }
+    }
+}

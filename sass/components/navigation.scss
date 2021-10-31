@@ -29,9 +29,26 @@
 
     &__item {
         list-style: none;
+        position: relative;
 
         &:not(:last-child) {
             margin-right: 4rem;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            transform: translate(-10%, -50%);
+            width: 0%;
+            height: 4px;
+            background-color: rgba($color-primary, .4);
+            transition: all .3s ease;
+        }
+
+        &:hover::after {
+            width: 110%;
         }
     }
 
@@ -42,6 +59,7 @@
 
     .socials-menu-btn {
         font-size: 2rem;
+        cursor: pointer;
     }
 }
 

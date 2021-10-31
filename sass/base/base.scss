@@ -13,9 +13,17 @@ html {
 .header,
 .features,
 .projects,
-.testimonials,
+.testimonial,
 .brands,
 .stories,
 .clients {
     padding: 10rem 20rem;
+}
+
+.header {
+    padding: 10rem 20rem 0;
+}
+
+.footer {
+    padding: 5rem 10rem;
 }

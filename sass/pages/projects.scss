@@ -1,0 +1,48 @@
+.projects {
+    background: #f8dfdb;
+
+    &__item {
+        width: 65%;
+        height: 30rem;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+
+        &--img {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &--handle {
+            position: absolute;
+            top: 0;
+            right: -45%;
+            opacity: 0;
+            width: 40%;
+            height: 100%;
+            padding: 3rem;
+            background: #000;
+            transition: all .6s ease 1s;
+
+            p:first-child {
+                margin-top: 20rem;
+            }
+
+        }
+
+        &.active &--handle {
+            right: 0;
+            opacity: 1;
+        }
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.brands {
+    background: #f8dfdb;
+
+    &-item {
+        @include flex;
+
+        img {}
+    }
+}

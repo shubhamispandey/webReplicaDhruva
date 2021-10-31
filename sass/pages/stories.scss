@@ -1,0 +1,21 @@
+.stories {
+    &__card {
+        &--user {
+            @include flexAlignCenter;
+
+            &--img {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 1rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

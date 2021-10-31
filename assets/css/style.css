@@ -340,7 +340,8 @@ html {
     display: flex; }
 
 .carousel-header {
-  height: 60rem; }
+  height: 60rem;
+  overflow: hidden; }
   .carousel-header .carousel-item {
     width: 100%;
     display: none;

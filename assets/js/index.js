@@ -76,3 +76,33 @@ carouselBtnLeft.addEventListener('click', () => {
         behavior: 'smooth',
     });
 })
+
+// Carousel Projects
+const carouselBtnCRight = document.querySelector('.carousel-btn-client-right')
+const carouselBtnCLeft = document.querySelector('.carousel-btn-client-left')
+const carouselLast = document.querySelector('.carousel-clients')
+
+carouselBtnCRight.addEventListener('click', () => {
+
+    const scrd = carouselLast.getBoundingClientRect();
+    console.log(scrd)
+
+
+    carouselLast.scrollTo({
+        left: scrd.left + 700,
+        top: scrd.top + carouselLast.pageYOffset,
+        behavior: 'smooth',
+    });
+})
+carouselBtnCLeft.addEventListener('click', () => {
+
+    const scrd = carouselLast.getBoundingClientRect();
+    console.log(scrd)
+
+
+    carouselLast.scrollTo({
+        left: scrd.left - 700,
+        top: scrd.top + carouselLast.pageYOffset,
+        behavior: 'smooth',
+    });
+})
